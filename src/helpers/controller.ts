@@ -1,5 +1,5 @@
 import { HttpResponse } from '@/presentation/contracts'
 
-export interface Controller<T = any> {
+export interface UseCase<T = any> {
   handle: (request: T) => Promise<HttpResponse>
 }

@@ -1,5 +1,5 @@
 import {
-  Controller,
+  UseCase,
   errorResponse,
   HttpResponse,
   successResponse,
@@ -7,7 +7,7 @@ import {
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
-export class appUseCase implements Controller {
+export class appUseCase implements UseCase {
   constructor() { }
 
   async handle(params: appUseCase.Params): Promise<HttpResponse> {
