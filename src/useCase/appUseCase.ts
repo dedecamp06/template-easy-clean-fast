@@ -7,7 +7,7 @@ import {
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
-export class appUseCase implements UseCase {
+export class AppUseCase implements UseCase {
   constructor() { }
 
   async handle(params: appUseCase.Params): Promise<HttpResponse> {
@@ -20,6 +20,6 @@ export class appUseCase implements UseCase {
   }
 }
 
-export namespace appUseCase {
+export namespace AppUseCase {
   export type Params = any
 }
